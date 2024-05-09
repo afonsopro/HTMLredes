@@ -6,7 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ficha_1</title>
 <style>
-
+        body{
+            margin: 0px;
+            font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+            font-size: 13px;
+           }
 <!style>
 <body>
         Olá Afonso
