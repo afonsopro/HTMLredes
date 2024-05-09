@@ -11,6 +11,12 @@
             font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
             font-size: 13px;
            }
+                div {
+                margin: 0px auto;
+                width: 800px;
+                height: 80px;
+                background-color: #cccccc;    
+                }
 <!style>
 <body>
         Olá Afonso
