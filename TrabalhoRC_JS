@@ -11,4 +11,4 @@ function changeColor() {
 
     text.innerHTML = coloredText; // Update the text content with colored text
   }
-  setInterval(changeColor,1000);
+  setInterval(changeColor,1);
