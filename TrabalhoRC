@@ -18,6 +18,7 @@
                 background-color: #cccccc;    
                 }
 </style>
+</head>
 <body>
 <div id="changingText">
     <h1>Olá Afonso:</h1>
