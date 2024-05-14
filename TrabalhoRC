@@ -6,29 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-        <style>
-        body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
-        </style>
 <title>Trabalho_RC_Afonso_Miguel</title>
-<style>
-        body{
-            margin: 0px;
-            font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
-            font-size: 13px;
-           }
-                div {
-                margin: 0px auto;
-                width: 800px;
-                height: 80px;
-                background-color: #cccccc;    
-                }
-</style>
 </head>
 <body>
 <div id="changingText">
     <h1>Olá Afonso:</h1>
     <p>Isto é um paragrafo</p>
   </div>
-<script src="TrabalhoRC_JS.js"></script>
 </body>
 </html>
