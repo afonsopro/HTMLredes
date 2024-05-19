@@ -1,8 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 <head>
-<title>Trabalho_RC_Afonso_Miguel</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<title>2P2 - Início</title>
 </head>
 <body>
+        <nav>
+                <label class="logo">Turma 2P2</div>
+                <ul>
+                        <li><a class="ativo" href="TrabalhoRC.html">Inicio</a></li>
+                        <li><a href="Turma.html">Turma</a></li>
+                        <li><a href="Trabalhos.html">Trabalhos</a></li>
+                        <li><a href="Chat.html">Chat</a></li>
+                        <li><a href="Suporte.html">Suporte</a></li>
+                        <li><a>Contactos</a></li>
+                </ul>
+        </nav>
+<footer>
+
+</footer>
 </body>
 </html>
