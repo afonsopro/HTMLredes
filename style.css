@@ -10,7 +10,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   background-color: #ffffff;
   color: #000000;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 1s, color 1s;
 }
 
 /*Dark mode*/
@@ -107,4 +107,13 @@ a.ativo, nav ul li a:hover {
 
 .toggle-label {
   cursor: pointer;
+}
+footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
 }
