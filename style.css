@@ -23,6 +23,7 @@ nav {
   background: #0082e6;
   height: 80px;
   width: 100%;
+  box-shadow: 3px 2px 50px #2c2c2c;
 }
 
 label.logo {
@@ -108,12 +109,22 @@ a.ativo, nav ul li a:hover {
 .toggle-label {
   cursor: pointer;
 }
-footer {
-  position: relative;
+.Primeiro_Footer {
+  position: absolute;
+  left: 0;
+  bottom: 9.5%;
+  width: 100%;
+  background-color: #0082e6;
+  color: white;
+  text-align: center;
+}
+.Segundo_Footer {
+  position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: red;
+  background-color: #0462aa;
   color: white;
   text-align: center;
+  box-shadow: 0px -2px 50px #2c2c2c;
 }
