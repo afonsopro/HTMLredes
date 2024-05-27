@@ -1,39 +1,124 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>        
+        <script src="DarkModeScript.js" defer></script>
+        <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Montserrat'> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
         <title>2P2 - Início</title>
         <style>
-                .Segundo_Footer { position: absolute; }
+                .Segundo_Footer { position: relative; }
+                .Primeiro_Footer { position: relative; }
         </style>
 </head>
 <body>
-        <nav>
+        <nav class="Barra_Navegacao">
                 <a href="TrabalhoRC.html" class="logo-button">Turma 2P2</a>
-               <label class="logo">
-                <ul>
-                        <li><a class="ativo" href="TrabalhoRC.html">Inicio</a></li>
-                        <li><a href="Turma.html">Turma</a></li>
-                        <li><a href="Trabalhos.html">Trabalhos</a></li>
-                        <li><a href="Chat.html">Chat</a></li>
-                        <li><a href="Suporte.html">Suporte</a></li>
-                        <li><a href="#footer">Contactos</a></li>
+                <label class="logo">
+                <ul class="Menu_Horizontal">
+                        <li class="Item_MenuHorizontal"><a class="ItemBotao_MenuHorizontal ativo" href="TrabalhoRC.html">Inicio</a></li>
+                        <li class="Item_MenuHorizontal"><a class="ItemBotao_MenuHorizontal" href="Turma.html">Turma</a></li>
+                        <li class="Item_MenuHorizontal"><a class="ItemBotao_MenuHorizontal" href="Trabalhos.html">Trabalhos</a></li>
+                        <li class="Item_MenuHorizontal"><a class="ItemBotao_MenuHorizontal" href="Chat.html">Chat</a></li>
+                        <li class="Item_MenuHorizontal"><a class="ItemBotao_MenuHorizontal" href="Suporte.html">Suporte</a></li>
+                        <li class="Item_MenuHorizontal"><a class="ItemBotao_MenuHorizontal" href="#footer">Contactos</a></li>
                 </ul>
         </nav>
-        <div class="toggle-container">
-                <input type="checkbox" id="theme-toggle">
-                <label for="theme-toggle" class="toggle-label">Dark Mode</label>
-        </div>
-        <script src="DarkModeScript.js"></script>
+        <i class="bi bi-brightness-high-fill" id="Botao_DarkMode"></i>
+        <section class="Slider">
+                <div class="Slider_Conteudo">
+                        <input type="radio" name="btn-radio" id="radio1">
+                        <input type="radio" name="btn-radio" id="radio2">
+                        <input type="radio" name="btn-radio" id="radio3">
+                        <input type="radio" name="btn-radio" id="radio4">
+                        <div class="SlideBox primeiro">
+                                <img src="TurmaInteira.jpg" alt="Slide_Turma">
+                        </div>
+                        <div class="SlideBox">
+                                <img src="HomemProgramando.jpg" alt="Slide_Trabalhos">
+                        </div>
+                        <div class="SlideBox">
+                                <img src="PessoaChat.jpeg" alt="Slide_Chat">
+                        </div>
+                        <div class="SlideBox">
+                                <img src="HomemSuporte.jpg" alt="Slide_Suporte">
+                        </div>
+                        <div class="AutoNav_Radio">
+                                <div class="AutoNav_Radio1">
+
+                                </div>
+                                <div class="AutoNav_Radio2">
+
+                                </div>
+                                <div class="AutoNav_Radio3">
+
+                                </div>
+                                <div class="AutoNav_Radio4">
+
+                                </div>
+                        </div>
+                        <div class="ManualNav_Radio">
+                                <label for="radio1" class="manual-btn"></label> 
+                                <label for="radio2" class="manual-btn"></label>
+                                <label for="radio3" class="manual-btn"></label>
+                                <label for="radio4" class="manual-btn"></label>       
+                        </div>
+                </div>
+        </section>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <footer class="Primeiro_Footer">
-                <br><br><br>
-        </footer>    
-        <footer class="Segundo_Footer">
-                <p>Projeto RC M4@2024<br>Todos os direitos reservados @ <i>Projeto RC - M4 (HTML)</i><br>Criado por: Afonso Costa e Miguel Gonçalves | 2P2 2023/24</p>
+                <div class="SobreNos_Footer">
+                        <h2 class="SobreNos_Logo">Sobre Nós</h2>
+                        <p class="SobreNos_Texto">Este website foi criado por dois alunos brilhantes da turma 2P2 do ano letivo 2023/2024, 
+                                                  Afonso Costa e Miguel Gonçalves, estudantes da Escola Secundária Leal da Câmera. Esta página
+                                                  tem como intuito centralizar e partilhar informação relativa à nossa turma e curso, onde todos
+                                                  os alunos do 2P2 possam procurar toda a informação relativa a projetos, notícias, ou fazer
+                                                  perguntas aos seus respetivos colegas.</p>
+                </div>
+                <div class="LinksGerais_Footer">
+                        <h2 class="LinksGerais_Logo">Links Gerais</h2>
+                        <ul class="LinksGerais_MenuVertical">
+                                <li class="LinksGerais_ItensMenu"><a class="LinksGerais_Botao" href="TrabalhoRC.html">Início</a></li>
+                                <li class="LinksGerais_ItensMenu"><a class="LinksGerais_Botao" href="Turma.html">Turma</a></li>
+                                <li class="LinksGerais_ItensMenu"><a class="LinksGerais_Botao" href="Trabalhos.html">Trabalhos</a></li>
+                                <li class="LinksGerais_ItensMenu"><a class="LinksGerais_Botao" href="Chat.html">Chat</a></li>
+                                <li class="LinksGerais_ItensMenu"><a class="LinksGerais_Botao" href="Suporte.html">Suporte</a></li>
+                        </ul>
+                </div>
+                <div class="Contactos_Footer">
+                        <h2 class="Contactos_Logo">Contactos</h2>
+                        <div class="Contactos_Lista">
+                                <div class="Contactos_Item">
+                                        <span class="fas fa-map-marker-alt"></span>
+                                        <span class="text">Escola Secundária Leal da Câmera, Avn. Pedro Nunes 1, Rio de Mouro, Sintra, Lisboa, Portugal<br></span>
+                                </div>
+                                <div class="Contactos_Item">
+                                        <span class="fas fa-envelope"></span>
+                                        <span class="text">turma2p2.202324@gmail.com<br></span>
+                                </div>
+                                <div class="Contactos_Item">
+                                        <span class="text"><strong>Afonso Costa</strong></span>
+                                        <span class="fas fa-phone-alt"></span>
+                                        <span class="text">+351 967 470 757<br></span>
+                                </div>
+                                <div class="Contactos_Item">
+                                        <span class="text"><strong>Miguel Gonçalves</strong></span>
+                                        <span class="fas fa-phone-alt"></span>
+                                        <span class="text">+351 934 928 941<br></span> 
+                                </div>                
+                        </div>
+                        
+                </div>
         </footer>
-        <script src="BottomFooter.js"></script>
+        <section id="footer">
+        <footer class="Segundo_Footer">
+                <p class="Texto_SegundoFooter">Projeto RC M4@2024<br>
+                                               Todos os direitos reservados @ <i>Projeto RC - M4 (HTML)</i><br>
+                                               Criado por: Afonso Costa e Miguel Gonçalves | 2P2 2023/24</p>
+        </footer>
+        </section>
 </body>
 </html>
