@@ -1,23 +1,15 @@
-const toggleSwitch = document.getElementById('theme-toggle');
+const toggle = document.getElementById('Botao_DarkMode');
+const body = document.querySelector('body');
 
-function switchTheme(event) {
-    if (event.target.checked) {
-        document.body.classList.add('dark-mode');
-        localStorage.setItem('theme', 'dark');
-    } else {
-        document.body.classList.remove('dark-mode');
-        localStorage.setItem('theme', 'light');
+toggle.addEventListener('click', function(){
+    this.classList.toggle('bi-moon');
+    if(this.classList.toggle('bi-brightness-high-fill')){
+        body.style.background = 'white';
+        body.style.color = 'black';
+        body.style.transition = '1s';
+    }else{
+        body.style.background = '#252524';
+        body.style.color = 'white';
+        body.style.transition = '1s';
     }
-}
-
-
-toggleSwitch.addEventListener('change', switchTheme);
-
-
-const currentTheme = localStorage.getItem('theme');
-if (currentTheme) {
-    if (currentTheme === 'dark') {
-        document.body.classList.add('dark-mode');
-        toggleSwitch.checked = true;
-    }
-}
+});
