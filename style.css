@@ -1,3 +1,4 @@
+/*Qualquer elemento*/
 * {
   padding: 0;
   margin: 0;
@@ -6,6 +7,12 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-bottom: 0%;
+}
+
+/*Corpo do site*/
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #ffffff;
@@ -13,19 +20,14 @@ body {
   transition: background-color 1s, color 1s;
 }
 
-/*Dark mode*/
-body.dark-mode {
-  background-color: #272727;
-  color: #ffffff;
-}
-
-nav {
+/*Barra de Navegação no topo*/
+.Barra_Navegacao {
   background: #0082e6;
   height: 80px;
   width: 100%;
-  box-shadow: 3px 2px 50px #2c2c2c;
 }
 
+/*Logo no top*/
 label.logo {
   color: white;
   font-size: 35px;
@@ -34,7 +36,8 @@ label.logo {
   font-weight: bold;
 }
 
-a.logo-button{
+/*Botão do logo no topo*/
+a.logo-button {
   color: white;
   font-size: 35px;
   line-height: 80px;
@@ -42,17 +45,18 @@ a.logo-button{
   font-weight: bold;
 }
 
-nav ul {
+/*Menu Horizontal no topo*/
+.Menu_Horizontal {
   float: right;
   margin-right: 20px;
 }
-
-nav ul li {
+/*Item do Menu Horizontal*/
+.Item_MenuHorizontal {
   display: inline-block;
   margin: 0 5px;
 }
 
-nav ul li a {
+.ItemBotao_MenuHorizontal {
   color: white;
   font-size: 17px;
   padding: 7px 13px;
@@ -60,71 +64,177 @@ nav ul li a {
   text-transform: uppercase;
 }
 
-a.ativo, nav ul li a:hover {
+.ativo, .ItemBotao_MenuHorizontal:hover {
   background: #1b9bff;
+  font-size: 53%;
   transition: .5s;
 }
 
-@media (max-width: 952px) {
-  label.logo {
-      font-size: 30px;
-      padding-left: 50px;
-  }
-  nav ul li a{
-      font-size: 16px;
-  }
+.ItemBotao_MenuHorizontal:not(:hover) {
+  font-size: 17px;
+  transition: .5s;
 }
 
-@media (max-width: 858px) {
-  nav ul {
-      position: fixed;
-      width: 100%;
-      height: 100vh;
-      background: #2c3e50;
-      top: 80px;
-      left: -100%;
-      text-align: center;
-      transition: all .5s;
-  }
-  nav ul li {
-      display: block;
-      margin: 50px 0;
-      line-height: 30px;
-  }
-  nav ul li a {
-      font-size: 20px;
-  }
-  a:hover, a.ativo {
-      background: none;
-      color: #0082e6;
-  }
-}
-
-.toggle-container {
+.bi {
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 6.8%;
+  left: 42%;
+  transform: translate(-50%, -50%);
 }
 
-.toggle-label {
+section.Slider {
+  margin: 0 auto;
+  width: 100%;
+  height: 700px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.Slider_Conteudo {
+  width: 400%;
+  height: auto;
+  display: flex;
+}
+
+.Slider_Conteudo input {
+  display: none;
+}
+
+.SlideBox {
+  width: 25%;
+  height: auto;
+  position: relative;
+  text-align: left;
+}
+
+.SlideBox img {
+  width: 100%;
+}
+
+.ManualNav_Radio {
+  position: absolute;
+  width: 100%;
+  margin-top: 35%;
+  display: flex;
+  justify-content: center;
+}
+
+.ManualNav_Radio .manual-btn {
+  border: 1px solid #026dbe;
+  padding: 10px;
+  border-radius: 50%;
   cursor: pointer;
 }
+
 .Primeiro_Footer {
   position: absolute;
   left: 0;
-  bottom: 9.5%;
+  padding-bottom: 1.6%;
   width: 100%;
+  height: 100%;
   background-color: #0082e6;
+  color: white;
+  box-shadow: 3px 3px 50px #2c2c2c;
+  display: flex;
+}
+
+.SobreNos_Footer {
+  text-align: left;
+  padding-left: 5%;
+}
+
+.SobreNos_Logo {
+  font-size: 27px;
+  padding-top: 23px;
+  width: 370px;
+}
+
+.SobreNos_Texto {
+  font-size: 87%;
+  padding-top: 13px;
+  width: 370px;
+  text-align: justify;
+  text-justify: inter-word; 
+}
+
+.LinksGerais_Footer {
+  text-align: right;
+}
+
+.LinksGerais_Logo {
+  font-size: 27px;
+  padding-top: 23px;
+  padding-left: 161px;
+}
+
+.LinksGerais_MenuVertical {
+  padding-top: 5px;
+  padding-left: 52%;
+  text-align: center;
+}
+
+.LinksGerais_ItensMenu {
+ margin: 10px 0;
+}
+
+.LinksGerais_Botao {
+  color: #d4d4d4;
+}
+
+.LinksGerais_Botao:hover {
+  font-size: 107%;
+  color: white;
+  transition: .5s;
+}
+
+.LinksGerais_Botao:not(:hover) {
+  font-size: 100%;
+  color: #d4d4d4;
+  transition: .5s;
+}
+
+.Contactos_Footer {
+  text-align: left;
+  padding-top: 23px;
+  padding-left: 200px; 
+}
+
+.Contactos_Logo {
+  font-size: 27px; 
+}
+
+.Contactos_Lista {
+  font-size: 92%;
+  padding-top: 14px;
+  padding-left: 3px;
+  width: 330px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.Contactos_Item {
+  margin-bottom: 10px;
+}
+
+.fas {
+  padding-right: 4px;
+}
+
+.Segundo_Footer {
+  position: absolute; 
+  left: 0;
+  bottom: 0;
+  height: 12%;
+  width: 100%;
+  background-color: #026dbe;
   color: white;
   text-align: center;
 }
-.Segundo_Footer {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #0462aa;
-  color: white;
-  text-align: center;
-  box-shadow: 0px -2px 50px #2c2c2c;
+
+.Texto_SegundoFooter {
+  padding: 10px;
+  font-size: 13px;
 }
