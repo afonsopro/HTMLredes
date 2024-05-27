@@ -4,37 +4,33 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <script src="DarkModeScript.js" defer></script>
         <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
         <style>
             h1 {
                 text-align: center;
                 padding-top: 14%;
             }
         </style>
-<title>2P2 - Turma</title>
+        <title>2P2 - Turma</title>
 </head>
 <body>
-        <nav>
+        <nav class="Barra_Navegacao">
                 <a href="TrabalhoRC.html" class="logo-button">Turma 2P2</a>
                 <label class="logo">
-                <ul>
-                        <li><a href="TrabalhoRC.html">Inicio</a></li>
-                        <li><a class="ativo" href="Turma.html">Turma</a></li>
-                        <li><a href="Trabalhos.html">Trabalhos</a></li>
-                        <li><a href="Chat.html">Chat</a></li>
-                        <li><a href="Suporte.html">Suporte</a></li>
-                        <li><a href="#footer">Contactos</a></li>
+                <ul class="Menu_Horizontal">
+                        <li class="Item_MenuHorizontal"><a class="ItemBotao_MenuHorizontal" href="TrabalhoRC.html">Inicio</a></li>
+                        <li class="Item_MenuHorizontal"><a class="ItemBotao_MenuHorizontal ativo" href="Turma.html">Turma</a></li>
+                        <li class="Item_MenuHorizontal"><a class="ItemBotao_MenuHorizontal" href="Trabalhos.html">Trabalhos</a></li>
+                        <li class="Item_MenuHorizontal"><a class="ItemBotao_MenuHorizontal" href="Chat.html">Chat</a></li>
+                        <li class="Item_MenuHorizontal"><a class="ItemBotao_MenuHorizontal" href="Suporte.html">Suporte</a></li>
+                        <li class="Item_MenuHorizontal"><a class="ItemBotao_MenuHorizontal" href="#footer">Contactos</a></li>
                 </ul>
         </nav>
+        <i class="bi bi-brightness-high-fill" id="Botao_DarkMode"></i>
         <h1>Aqui ficaria o mapa da turma.</h1>
-        <div class="toggle-container">
-                <input type="checkbox" id="theme-toggle">
-                <label for="theme-toggle" class="toggle-label">Dark Mode</label>
-        </div>
-        <script src="DarkModeScript.js"></script>
         <footer class="Segundo_Footer">
-                <p>Projeto RC M4@2024<br>Todos os direitos reservados @ <i>Projeto RC - M4 (HTML)</i><br>Criado por: Afonso Costa e Miguel Gonçalves | 2P2 2023/24</p>
-        </footer>
-        <script src="BottomFooter.js"></script>
+                <p class="Texto_SegundoFooter">Projeto RC M4@2024<br>Todos os direitos reservados @ <i>Projeto RC - M4 (HTML)</i><br>Criado por: Afonso Costa e Miguel Gonçalves | 2P2 2023/24</p></footer>
 </body>
 </html>
