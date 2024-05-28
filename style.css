@@ -25,6 +25,7 @@ body {
   background: #0082e6;
   height: 86px;
   width: 100%;
+  box-shadow: 3px 3px 50px #2c2c2c;
 }
 
 /*Logo no top*/
@@ -137,7 +138,6 @@ section.Slider {
   height: 100%;
   background-color: #0082e6;
   color: white;
-  box-shadow: 3px 3px 50px #2c2c2c;
   display: flex;
 }
 
