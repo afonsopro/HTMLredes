@@ -6,10 +6,10 @@ toggle.addEventListener('click', function(){
     if(this.classList.toggle('bi-brightness-high-fill')){
         body.style.background = 'white';
         body.style.color = 'black';
-        body.style.transition = '1s';
+        body.style.transition = '.7s';
     }else{
         body.style.background = '#252524';
         body.style.color = 'white';
-        body.style.transition = '1s';
+        body.style.transition = '.7s';
     }
 });
