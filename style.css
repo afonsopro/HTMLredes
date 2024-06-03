@@ -1,246 +1,371 @@
 /*Qualquer elemento*/
 * {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box; 
-  }
-  
-  html {
-    scroll-behavior: smooth;
-    scroll-padding-bottom: 0%;
-  }
-  
-  /*Corpo do site*/
-  body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #ffffff;
-    color: #000000;
-    transition: background-color 1s, color 1s;
-  }
-  
-  /*Barra de Navegação no topo*/
-  .Barra_Navegacao {
-    background: #0082e6;
-    height: 86px;
-    width: 100%;
-    box-shadow: 3px 3px 50px #2c2c2c;
-  }
-  
-  /*Logo no top*/
-  label.logo {
-    color: white;
-    font-size: 35px;
-    line-height: 80px;
-    padding: 0 100px;
-    font-weight: bold;
-  }
-  
-  /*Botão do logo no topo*/
-  a.logo-button {
-    color: white;
-    font-size: 35px;
-    line-height: 80px;
-    padding: 0 100px;
-    font-weight: bold;
-  }
-  
-  /*Menu Horizontal no topo*/
-  .Menu_Horizontal {
-    float: right;
-    margin-right: 20px;
-  }
-  /*Item do Menu Horizontal*/
-  .Item_MenuHorizontal {
-    display: inline-block;
-    margin: 0 5px;
-  }
-  
-  .ItemBotao_MenuHorizontal {
-    color: white;
-    font-size: 17px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
-  }
-  
-  .ativo, .ItemBotao_MenuHorizontal:hover {
-    background: #1b9bff;
-    font-size: 53%;
-    transition: .5s;
-  }
-  
-  .ItemBotao_MenuHorizontal:not(:hover) {
-    font-size: 17px;
-    transition: .5s;
-  }
-  
-  .bi {
-    color: white;
-    font-size: 35px;
-    cursor: pointer;
-    position: absolute;
-    top: 6.8%;
-    left: 42%;
-    transform: translate(-50%, -50%);
-  }
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
 
-  .VaiParaHeader {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-  }
-  
-  section.Slider {
-    margin: 0 auto;
-    width: 100%;
-    height: 700px;
-    padding: 0;
-    overflow: hidden;
-  }
-  
-  .Slider_Conteudo {
-    width: 400%;
-    height: auto;
-    display: flex;
-  }
-  
-  .Slider_Conteudo input {
-    display: none;
-  }
-  
-  .SlideBox {
-    width: 25%;
-    height: auto;
-    position: relative;
-    text-align: left;
-  }
-  
-  .SlideBox img {
-    width: 100%;
-  }
-  
-  .ManualNav_Radio {
-    position: absolute;
-    width: 100%;
-    margin-top: 35%;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .ManualNav_Radio .manual-btn {
-    border: 1px solid #026dbe;
-    padding: 10px;
-    border-radius: 50%;
-    cursor: pointer;
-  }
-  
-  .Primeiro_Footer {
-    position: absolute;
-    left: 0;
-    padding-bottom: 1.6%;
-    width: 100%;
-    height: 100%;
-    background-color: #0082e6;
-    color: white;
-    display: flex;
-  }
-  
-  .SobreNos_Footer {
-    text-align: left;
-    padding-left: 5%;
-  }
-  
-  .SobreNos_Logo {
-    font-size: 27px;
-    padding-top: 23px;
-    width: 370px;
-  }
-  
-  .SobreNos_Texto {
-    font-size: 87%;
-    padding-top: 13px;
-    width: 370px;
-    text-align: justify;
-    text-justify: inter-word; 
-  }
-  
-  .LinksGerais_Footer {
-    text-align: right;
-  }
-  
-  .LinksGerais_Logo {
-    font-size: 27px;
-    padding-top: 23px;
-    padding-left: 161px;
-  }
-  
-  .LinksGerais_MenuVertical {
-    padding-top: 5px;
-    padding-left: 52%;
-    text-align: center;
-  }
-  
-  .LinksGerais_ItensMenu {
-   margin: 10px 0;
-  }
-  
-  .LinksGerais_Botao {
-    color: #d4d4d4;
-  }
-  
-  .LinksGerais_Botao:hover {
-    font-size: 107%;
-    color: white;
-    transition: .5s;
-  }
-  
-  .LinksGerais_Botao:not(:hover) {
-    font-size: 100%;
-    color: #d4d4d4;
-    transition: .5s;
-  }
-  
-  .Contactos_Footer {
-    text-align: left;
-    padding-top: 23px;
-    padding-left: 200px; 
-  }
-  
-  .Contactos_Logo {
-    font-size: 27px; 
-  }
-  
-  .Contactos_Lista {
-    font-size: 92%;
-    padding-top: 14px;
-    padding-left: 3px;
-    width: 330px;
-    text-align: justify;
-    text-justify: inter-word;
-  }
-  
-  .Contactos_Item {
-    margin-bottom: 10px;
-  }
-  
-  .fas {
-    padding-right: 4px;
-  }
-  
-  .Segundo_Footer {
-    position: absolute; 
-    left: 0;
-    bottom: 0;
-    height: 12%;
-    width: 100%;
-    background-color: #026dbe;
-    color: white;
-    text-align: center;
-  }
-  
-  .Texto_SegundoFooter {
-    padding: 10px;
-    font-size: 13px;
-  }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-bottom: 0%;
+}
+
+/*Corpo do site*/
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 1s, color 1s;
+}
+
+/*Barra de Navegação no topo*/
+.Barra_Navegacao {
+  background: #0082e6;
+  height: 86px;
+  width: 100%;
+  box-shadow: 3px 3px 50px #2c2c2c;
+  z-index: top;
+}
+
+/*Logo no top*/
+label.logo {
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+.logo-button {
+  color: #ffffff;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0px 100px;
+  font-weight: bold;
+}
+
+
+/*Menu Horizontal no topo*/
+.Menu_Horizontal {
+  float: right;
+  margin-right: 20px;
+}
+/*Item do Menu Horizontal*/
+.Item_MenuHorizontal {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.ItemBotao_MenuHorizontal {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.ativo, .ItemBotao_MenuHorizontal:hover {
+  background: #1b9bff;
+  font-size: 53%;
+  transition: .5s;
+}
+
+.ItemBotao_MenuHorizontal:not(:hover) {
+  font-size: 17px;
+  transition: .5s;
+}
+
+.bi-brightness-high-fill, .bi-moon {
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+  position: absolute;
+  top: 6.8%;
+  left: 42%;
+  transform: translate(-50%, -50%);
+}
+
+.VaiParaHeader {
+  display: inline-block;
+  position: fixed !important;
+  bottom: 25px;
+  right: 25px;
+  background-color: #0082e6;
+  border-radius: 20px;
+  padding: 10px 10px;
+  padding-top: 2px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+  position: absolute;
+  z-index: 4;
+}
+
+.VaiParaHeader:hover {
+  font-size: 230%;
+  transition: .2s;
+}
+
+.VaiParaHeader:not(:hover) {
+  font-size: 35px;
+  transition: .2s;
+}
+
+section.Slider {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+.Slider_Conteudo {
+  width: 400%;
+  height: auto;
+  display: flex;
+}
+
+.Slider_Conteudo input {
+  display: none;
+}
+
+.SlideBox {
+  width: 25%;
+  height: auto;
+  position: relative;
+  text-align: left;
+  transition: 1s;
+}
+
+.SlideBox img {
+  top: 0;
+  width: 100%;
+  height: 600px;
+}
+
+.Preto_Slider {
+  position: absolute;
+  z-index: 1;
+  display: block;
+}
+
+.Slider_Conteudo h1 {
+  color: #ffffff !important;
+  text-shadow: 0 0 3px #ffffff;
+  font-size: 280%;
+  position: absolute;
+  display: block;
+  z-index: 2;
+  left: 200px;
+  top: 130px;
+}
+
+.Slider_Conteudo p {
+  color: #ffffff !important;
+  font-size: 120%;
+  position: absolute;
+  display: block;
+  width: 600px;
+  z-index: 2;
+  left: 200px;
+  top: 200px;
+  text-align: justify;
+  text-justify: inter-word; 
+}
+
+.SaibaMais_Slider {
+  position: absolute;
+  z-index: 2;
+  color: #ffff;
+  text-shadow: 0 0 9px #ffffff;
+  font-size: 120%;
+  left: 200px;
+  top: 320px;
+  background: #0082e6;
+  border-radius: 4px;
+  padding: 10px 30px;
+  text-transform: uppercase;
+}
+
+.SaibaMais_SliderSuporte {
+  position: absolute;
+  z-index: 2;
+  color: #ffff;
+  text-shadow: 0 0 9px #ffffff;
+  font-size: 120%;
+  left: 200px;
+  top: 345px;
+  background: #0082e6;
+  border-radius: 4px;
+  padding: 10px 30px;
+  text-transform: uppercase;
+}
+
+.SaibaMais_Slider:hover, .SaibaMais_SliderSuporte:hover {
+  background-color: #fff;
+  color: #0082e6;
+  transition: .7s;
+}
+
+.SaibaMais_Slider:not(:hover), .SaibaMais_SliderSuporte:not(:hover) {
+  color: #fff;
+  background-color: #0082e6;
+  text-shadow: 0 0 9px #fff;
+  transition: .7s;
+}
+
+.ManualNav_Radio, .AutoNav_Radio {
+  position: absolute;
+  width: 100%;
+  margin-top: 40%;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+}
+
+.ManualNav_Radio .manual-btn, .AutoNav_Radio div {
+  border: 1px solid #026dbe;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.ManualNav_Radio .manual-btn:not(:last-child), .AutoNav_Radio div:not(:last-child) {
+  margin-right: 10px;
+}
+
+.ManualNav_Radio .manual-btn:hover {
+  background-color: #026dbe;
+}
+
+#radio1:checked ~ .AutoNav_Radio .AutoNav_Radio1, #radio2:checked ~ .AutoNav_Radio .AutoNav_Radio2, #radio3:checked ~ .AutoNav_Radio .AutoNav_Radio3, #radio4:checked ~ .AutoNav_Radio .AutoNav_Radio4 {
+  background-color: #026dbe;
+}
+
+#radio1:checked ~.primeiro {
+  margin-left: 0%;
+}
+
+#radio2:checked ~ .primeiro {
+  margin-left: -25%;
+}
+
+#radio3:checked ~ .primeiro {
+  margin-left: -50%;
+}
+
+#radio4:checked ~ .primeiro {
+  margin-left: -75%;
+}
+
+.Primeiro_Footer {
+  position: absolute;
+  left: 0;
+  padding-bottom: 1.6%;
+  width: 100%;
+  height: 100%;
+  background-color: #0082e6;
+  color: white;
+  display: flex;
+}
+
+.SobreNos_Footer {
+  text-align: left;
+  padding-left: 5%;
+}
+
+.SobreNos_Logo {
+  font-size: 27px;
+  padding-top: 23px;
+  width: 370px;
+}
+
+.SobreNos_Texto {
+  font-size: 87%;
+  padding-top: 13px;
+  width: 370px;
+  text-align: justify;
+  text-justify: inter-word; 
+}
+
+.LinksGerais_Footer {
+  text-align: right;
+}
+
+.LinksGerais_Logo {
+  font-size: 27px;
+  padding-top: 23px;
+  padding-left: 161px;
+}
+
+.LinksGerais_MenuVertical {
+  padding-top: 5px;
+  padding-left: 52%;
+  text-align: center;
+}
+
+.LinksGerais_ItensMenu {
+ margin: 10px 0;
+}
+
+.LinksGerais_Botao {
+  color: #d4d4d4;
+}
+
+.LinksGerais_Botao:hover {
+  font-size: 107%;
+  color: white;
+  transition: .5s;
+}
+
+.LinksGerais_Botao:not(:hover) {
+  font-size: 100%;
+  color: #d4d4d4;
+  transition: .5s;
+}
+
+.Contactos_Footer {
+  text-align: left;
+  padding-top: 23px;
+  padding-left: 200px; 
+}
+
+.Contactos_Logo {
+  font-size: 27px; 
+}
+
+.Contactos_Lista {
+  font-size: 92%;
+  padding-top: 14px;
+  padding-left: 3px;
+  width: 330px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.Contactos_Item {
+  margin-bottom: 10px;
+}
+
+.fas {
+  padding-right: 4px;
+}
+
+.Segundo_Footer {
+  position: absolute; 
+  left: 0;
+  bottom: 0;
+  height: 12%;
+  width: 100%;
+  background-color: #026dbe;
+  color: white;
+  text-align: center;
+}
+
+.Texto_SegundoFooter {
+  padding: 10px;
+  font-size: 13px;
+}
