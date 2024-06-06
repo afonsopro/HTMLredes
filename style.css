@@ -20,6 +20,10 @@ body {
   transition: background-color 1s, color 1s;
 }
 
+a {
+  color:#000000;
+}
+
 /*Barra de Navegação no topo*/
 .Barra_Navegacao {
   background: #0082e6;
@@ -45,7 +49,6 @@ label.logo {
   padding: 0px 100px;
   font-weight: bold;
 }
-
 
 /*Menu Horizontal no topo*/
 .Menu_Horizontal {
@@ -260,6 +263,111 @@ section.Slider {
 #radio4:checked ~ .primeiro {
   margin-left: -75%;
 }
+
+.SobreTurma {
+  text-align: center;
+  padding-top: 63px;
+}
+
+.SobreTurma:hover {
+  font-size: 130%;
+  transition: 1s;
+}
+
+.SobreTurma:not(:hover) {
+  font-size: 100%;
+  transition: 1s;
+}
+
+.SobreTurma_Titulo {
+  display: inline;
+  padding-top: 30px;
+  padding-left: 180px;
+  padding-right: 180px;
+  padding-bottom: 260px;
+  border-radius: 20px;
+  background: #ebebeb;
+}
+
+.SobreTurma_Texto {
+  font-size: 18px;
+  padding-left: 450px;
+  padding-top: 30px;
+  height: 300px;
+  width: 900px;
+  text-align: justify;
+  text-justify: inter-word; 
+}
+
+.FotoTurma_Sticky {
+  width: 100%;
+  background-image: url(TurmaVisitaPT.jpg);
+  background-position: center;
+  background-size: 100% 950px;
+  display: table;
+  background-attachment: fixed;
+}
+
+.FotoTurma_Sticky:hover {
+  background-size: 110% 1050px;
+  transition: 1s;
+}
+
+.FotoTurma_Sticky:not(:hover) {
+  background-size: 100% 950px;
+  transition: 1s;
+}
+
+.Eventos_Futuros {
+  text-align: left;
+  padding-left: 100px;
+}
+
+.Eventos_Futuros h1 {
+  font-size: 40px;
+  padding-left: 30px;
+}
+
+.Evento {
+  display: flex;
+}
+
+.Evento:hover {
+  text-decoration: underline;
+  text-decoration-color: #289bf3;
+}
+
+.Barra_Azul {
+  height: 80px;
+  right: 100px;
+}
+
+.Evento h2 {
+  padding-top: 25px;
+}
+
+.Evento p {
+  padding-top: 27px;
+  padding-left: 340px;
+  font-size: 20px;
+}
+
+.Evento:nth-last-of-type(4) p {
+  padding-left: 503px;
+}
+
+.Evento:nth-last-of-type(3) p {
+  padding-left: 500px;
+}
+
+.Evento:nth-last-of-type(2) p {
+  padding-left: 644px;
+}
+
+.Evento:last-of-type p {
+  padding-left: 665px;
+}
+
 
 .Primeiro_Footer {
   position: absolute;
